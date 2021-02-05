@@ -1,0 +1,971 @@
+
+ <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="HandheldFriendly" content="true" /><title>Site Oficial - Código Venda Realizada</title><meta name="description" content="Site Oficial - Código Venda Realizada" /><meta name="keywords" content="Site Oficial - Código Venda Realizada" /><link rel="shortcut icon" href="https://s3-eu-west-1.amazonaws.com/landingi-editor-uploads/X04PATvk/logocvr.png"  type="image/x-icon"><meta property="og:title" content="Site Oficial - C&oacute;digo Venda Realizada"/><meta property="og:description" content="Site Oficial - C&oacute;digo Venda Realizada"/><meta property="og:image" content=""/><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link href="" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin,latin-ext" type="text/css" rel="stylesheet"><link href="//fonts.googleapis.com/css?family=Montserrat:400,700,300,300italic,400italic,700italic&subset=latin,latin-ext,cyrillic,cyrillic-ext" type="text/css" rel="stylesheet"><!--[if lt IE 9]><link href="https://old.assets-landingi.com/bootstrap/css/ie8-grid.css?v=8.9.8" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/KhTgmKMJ/base_ie8.css" type="text/css" rel="stylesheet"><![endif]--><style data-name="customCss" type="text/css">/*WHATSAPP POPUP*/
+
+.d-none {
+    display: none;
+}
+
+.no-margin {
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pop-whats .pop-whats_icon {
+    background: #2db742;
+}
+
+.pop-whats .pop-whats_icon:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent url('https://midiaronaldlopes.com.br/script/whats-logo.svg') center center no-repeat;
+    background-size: 30px auto;
+    -webkit-background-size: 30px auto;
+    -moz-background-size: 30px auto;
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+}
+
+.pop-whats .pop-whats_icon:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent url('https://midiaronaldlopes.com.br/script/x-icon.svg') center center no-repeat;
+    background-size: 14px auto;
+    -webkit-background-size: 14px auto;
+    -moz-background-size: 14px auto;
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -ms-transform: scale(0) rotate(-360deg);
+    transform: scale(0) rotate(-360deg);
+    -webkit-transform: scale(0) rotate(-360deg);
+    -moz-transform: scale(0) rotate(-360deg);
+}
+
+.pop-whats.wa__active .pop-whats_icon:before {
+    opacity: 0;
+    -ms-transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(360deg);
+    -webkit-transform: scale(0) rotate(360deg);
+    -moz-transform: scale(0) rotate(360deg);
+}
+
+.pop-whats.wa__active .pop-whats_icon:after {
+    opacity: 1;
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+}
+
+img.pop-fechar {
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+    right: 12px;
+    z-index: 99999;
+    height: auto;
+    width: 14px;
+}
+
+.box-whats {
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #8e8e8e;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+    -moz-transform: translate(0, 50px);
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    will-change: transform, visibility, opacity;
+    /*max-width: calc(100% - 50px);*/
+}
+
+.box-whats.wa__active {
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    visibility: visible;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.box-whats .header {
+    background-color: #295f54;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: left;
+}
+
+.box-whats .content {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #dddddd;
+}
+
+.box-whats .content .text-content {
+    background-color: #fff;
+    position: relative;
+}
+
+.box-whats .foot {
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+
+.box-whats .foot form.form-pop-whats {
+    position: relative;
+}
+
+.box-whats .foot form.form-pop-whats button {
+    width: 15%;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 20px;
+    color: #3e8979;
+    transform: translateY(-50%);
+}
+
+.box-whats .foot form.form-pop-whats input {
+    font-family: 'Source Sans Pro', 'Helvetica', sans-serif !important;
+    font-size: 16px;
+    color: #333;
+    width: 85%;
+    background-color: #fff;
+    border: 0;
+    height: 50px;
+    resize: none;
+    outline: none;
+    font-weight: normal;
+    line-height: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.box-whats .header .img-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.box-whats .header .img-whats img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 200px;
+}
+
+@media (max-width: 330px) {
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 70px;
+    }
+
+    .box-whats .header h2 {
+        font-size: 16px;
+    }
+
+    .box-whats .header h3 {
+        font-size: 12px;
+    }
+
+    .box-whats .header .img-whats {
+        left: 10px !important;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 429px) {
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 80px;
+    }
+
+    .box-whats .header h2 {
+        font-size: 16px;
+    }
+
+    .box-whats .header h3 {
+        font-size: 12px;
+    }
+
+    .box-whats .header .img-whats {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 429px) {
+    .pop-whats {
+        position: fixed;
+        right: 20px;
+        bottom: 15px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .pop-whats .pop-whats_icon {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        background: #2db742;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -webkit-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+    }
+
+    .ball-red {
+        position: absolute;
+        right: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+    }
+
+    .box-whats {
+        z-index: 9;
+        position: fixed;
+        right: 20px;
+        bottom: 70px;
+        width: calc(100% - 20px * 2);
+    }
+
+    .box-whats:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 24px;
+        background-color: #fff;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+    }
+
+    .box-whats .header h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .box-whats .header h3 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        line-height: 0;
+        color: #fff;
+    }
+
+    .box-whats .content {
+        padding: 0 20px 0 20px;
+        background: center top no-repeat url('https://midiaronaldlopes.com.br/script/whats-logo.svg');
+    }
+
+    .box-whats .content .text-content span.nom-brv {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #888;
+    }
+
+    .box-whats .content .text-content span.data-brv {
+        text-align: right;
+        font-size: 12px;
+        display: block;
+        font-weight: 600;
+        line-height: 9px;
+        color: #888;
+        margin-top: 10px;
+    }
+
+    .box-whats .content .text-content {
+        display: inline-block;
+        color: #444;
+        border-radius: 10px;
+        padding: 10px 15px 10px 15px;
+        font-size: 15px;
+        margin: 20px 30px 20px 0;
+        font-weight: 600;
+        word-wrap: break-word;
+        width: calc(100% - 20px * 2);
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+    }
+
+    .box-whats .content .text-content:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: -5px;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+
+    .box-whats .foot {
+        padding: 0;
+    }
+}
+
+@media (min-width: 430px) {
+    .pop-whats {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .pop-whats .pop-whats_icon {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        background: #2db742;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -webkit-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+    }
+
+    .ball-red {
+        position: absolute;
+        right: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+    }
+
+    .box-whats {
+        z-index: 999;
+        position: fixed;
+        right: 30px;
+        bottom: 100px;
+        width: 400px;
+    }
+
+    .box-whats:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 24px;
+        background-color: #fff;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+    }
+
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 100px;
+    }
+
+    .box-whats .header .img-whats {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box-whats .header h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .box-whats .header h3 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .box-whats .content {
+        padding: 0 20px 0 20px;
+        background: center top no-repeat url('https://midiaronaldlopes.com.br/script/bg-whatsapp.jpg');
+    }
+
+    .box-whats .content .text-content {
+        display: inline-block;
+        color: #444;
+        border-radius: 10px;
+        padding: 10px 15px 10px 15px;
+        margin: 30px 30px 10px 0;
+        font-size: 15px;
+        font-weight: 600;
+        word-wrap: break-word;
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+        text-align: left;
+    }
+
+    .box-whats .content .text-content span.nom-brv {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #777;
+    }
+
+    .box-whats .content .text-content span.data-brv {
+        text-align: right;
+        font-size: 12px;
+        display: block;
+        line-height: 9px;
+        font-weight: 600;
+        color: #888;
+    }
+
+    .box-whats .content .text-content:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: -5px;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+
+    .box-whats .foot {
+        padding: 0;
+    }
+}
+
+a.btn-whats {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    display: block;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(79, 206, 93);
+    overflow: hidden;
+}
+
+a.btn-whats:hover, a.btn-whats:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wpp-typing-loader {
+    margin: 6px 30px;
+    width: 6px;
+    border-radius: 10px;
+    height: 6px;
+    -webkit-animation: line 1s linear infinite alternate;
+    -moz-animation: line 1s linear infinite alternate;
+    animation: line 1s linear infinite alternate;
+}
+
+@-webkit-keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}
+
+@-moz-keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}
+
+@keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}</style><link href="https://styles.assets-landingi.com/assets/css/2.11-landend-base.css" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/zwFn6RLv/base.css" type="text/css" rel="stylesheet"><script>
+    var landingiInternalDetails = {
+        'landing_id': '1018835',
+        'landing_hash': '55d20dd459034c498bd7',
+        'landing_variant_hash': '',
+        'landing_name': 'PV+CVR+2+-+branca',
+        'landing_lang': 'pt',
+        'account_uuid': '42d0e110-b4be-11ea-9153-9e5061b4ba7a',
+        'apikey': 'd25f709f-3b74-452d-9f80-cd18d9ee89e0'
+   }
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZKKXP6');</script>
+<!-- End Google Tag Manager --><script>var youtubeVideos = [];</script><script src="https://player.vimeo.com/api/player.js"></script><script src="https://popups.landingi.com/api/v2/landing/install-code?apikey=d25f709f-3b74-452d-9f80-cd18d9ee89e0&landing=55d20dd459034c498bd7"></script><script src="https://scripts.assets-landingi.com/lightboxes/lightbox-render.js?v=1612490636"></script>
+<script>
+window.addEventListener('load', function () {
+    LightboxRender.init({
+        useAaf: true
+    })
+});
+</script></head><body id="TxvpQxGuo6CkxW3pseVeXnPkXz3TAWhR">
+<div id="fwG8O6R5wFuI4GIMqEzXMxnoiEH1Tctn" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="rQrO8drBLpvQbibKyOPrWg86g9kioqXI" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="hONU2VTcymhg5N1T8HS84Jqyg4BMmFIG" class="widget widget-text"><p><b style="color: rgb(0, 0, 0);">ATENÇÃO:</b> Descubra o <span style="font-weight: bold; color: rgb(0, 113, 255);">MÉTODO</span> que pessoas comuns usam <span style="">para </span></p><p>empreender online e <span style="font-weight: bold; color: rgb(0, 113, 255);">VIVEREM</span> apenas da <span style="font-weight: bold; color: rgb(0, 113, 255);">INTERNET</span>.</p></div><div id="vzoERaOZAlfbMrQ8T1qTmmRcA42v5EcC" ></div>
+                <script>
+                youtubeVideos.push({
+                    hash: 'vzoERaOZAlfbMrQ8T1qTmmRcA42v5EcC',
+                    id: '27y1gvmWD34',
+                    autoplay: 0,
+                    rel: 0,
+                    loop: 0,
+                    showinfo: 1,
+                    controls: 0,
+                    mute: 0
+                });
+                </script><a href="/button/BrtV0dU3qhbbts6EFKgrDe8vCM7mur5b" id="BrtV0dU3qhbbts6EFKgrDe8vCM7mur5b" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/PHC139864">
+    <div class="widget-overlay"></div>
+    <div id="KlB57cmZzZsARowCFIX2LsBs3llPBn9a" class="widget widget-text">QUERO ME INSCREVER AGORA!</div>
+</a><div id="PPet2XegUBsChb7UHF2U4EBciM8CvJ0l" class="widget widget-text"><p><span style="font-style: italic;">Menos de R$0,50 POR DIA*</span></p></div><div id="Z77DQ4LVZS3zp9xNUTKStwvTEtBWy6qz" class="widget widget-box"></div><img id="yJBgzniKZ1qTrBt40KatoZs4HIwnm6sN"  width="640" height="425"  class="widget widget-image" data-original="https://images.assets-landingi.com/NVnHwg7J/Sem_T_tulo_5.2.png" src="https://images.assets-landingi.com/VLE2UU6OsOCzM1iq/Sem_T_tulo_5.2.png" srcset="https://images.assets-landingi.com/VLE2UU6OsOCzM1iq/Sem_T_tulo_5.2.png 1x, https://images.assets-landingi.com/NVnHwg7J/Sem_T_tulo_5.2.png 2x"  alt="" ><div id="TT6Cofw1O3P5k1DtfWoZ4SlOEAlDfKzr" class="widget widget-box"></div>
+        </div>
+    </div>
+</div>
+<div id="tboSasxasGTMZt2kxpJcGQ0xyzXk7DPI" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="CBvCMxqqM7g2b6L6gDogrm4g8VKCiwEC" class="widget widget-text"><p>O Código Venda Realizada foi feito com um único objetivo:</p><p><br></p><p><span style="font-weight: bold;"> 1000 pessoas faturando pelo menos 10k todos os meses através</span></p><p><span style="font-weight: bold;"> do mercado de afiliados. </span></p><p><br></p><p>E para isso ensinamos tudo que os nossos top afiliados fazem para conseguir </p><p>esse feito todos os meses. </p><p><br></p><p>Nosso objetivo é transmitir o nosso conhecimento e experiência para nossos </p><p>alunos atingirem essa meta tão especial.</p></div>
+        </div>
+    </div>
+</div>
+<div id="hii2L62mWbdEypNPlL2H7kPBu8I7JGpV" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="Tc251eRsZio7sQuMbcfxW2rZGiz7tWDo" class="widget widget-text"><p><span style="font-weight: 700; color: rgb(0, 113, 255);">Não ganhar o </span><span style="color: rgb(0, 113, 255); font-weight: 700; letter-spacing: 0px;">quanto você merece </span></p><p><span style="color: rgb(0, 113, 255); font-weight: 700; letter-spacing: 0px;">é um problema sério.</span></p></div><i id="lRLxJNTaAxaqHrRinbBhZSxn1vP7b1dZ" class="fa fa-times-circle widget widget-icon"></i><div id="HQOCIWFPWrLM9vTUcl508iCMDtxmnhQb" class="widget widget-text"><p>Muito trabalho e <span style="font-weight: bold; color: rgb(0, 113, 255);">pouco</span> <span style="color: rgb(0, 113, 255);"><span style="font-weight: bold;">reconhecimento</span>.</span></p></div><div id="UVrfWnGVAJkbOQPL7ZfJDRO3RVwzv1gS" class="widget widget-text"><p>Não consegue comprar o que <span style="font-weight: bold; color: rgb(0, 113, 255);">deseja.</span></p></div><i id="kh2JKA2UNSmHSWXGTiDuHRiIF5JyOMJT" class="fa fa-times-circle widget widget-icon"></i><div id="HgvR1gPx7B1fnTyF0H9hwwPxyoZQhxQa" class="widget widget-text"><p>Sua família acha que você não vai chegar em <span style="color: rgb(0, 113, 255); font-weight: bold;">lugar</span> <span style="font-weight: bold; color: rgb(0, 113, 255);">nenhum.</span></p></div><i id="f74q58y9tAMmTXJmq829ncHT1ynTvIAl" class="fa fa-times-circle widget widget-icon"></i><i id="aqByLoHTKAgMRh2mTyPipyksISdMBGEe" class="fa fa-times-circle widget widget-icon"></i><div id="yedOHqC6LDwK7pewSwMTyIyocxVwAOJp" class="widget widget-text"><p>Não sobra <span style="color: rgb(0, 113, 255);"><span style="font-weight: bold;">nada</span> </span>no final do mês.</p></div>
+        </div>
+    </div>
+</div>
+<div id="aPZUcb16eoJQDfHiND4tTXfwsz3pepHo" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="SA8QzyQRZUgSkW9vAEgRurAanWLx4PRp" class="widget widget-text"><p><span style="font-weight: 700; color: rgb(255, 255, 255);">CHEGOU A HORA DE MUDAR ESSA SITUAÇÃO</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="ae9MG99HKcLZ8PhT4hpPx1mV9KKiFwyP" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="mF2MaH0OBfF5GMSuLy0AaPMa7I6CZI8G" class="widget widget-text"><p>Tudo que você tem que fazer é o que a maioria não faz. Precisa realmente tomar a decisão de <span style="color: rgb(0, 113, 255);"><span style="font-weight: bold;">MUDAR</span><span style="font-weight: bold;"> </span><span style="font-weight: bold;">DE VIDA</span></span>, estudar e aplicar tudo que será ensinado.</p></div><div id="lTn0h5gAfAA8KzENqiHkzReJoN9ggLZs" class="widget widget-text"><p>Para isso desenvolvemos um <span style="color: rgb(0, 113, 255); font-weight: 700;">PASSO A PASSO </span><span style="letter-spacing: 0px;">do que você deve fazer a cada aula, os materiais que você vai precisar e um suporte para responder <span style="color: rgb(0, 113, 255); font-weight: bold;">QUALQUER</span> </span><span style="letter-spacing: 0px; font-weight: bold; color: rgb(0, 113, 255);">DÚVIDA</span><span style="letter-spacing: 0px;"> que você tiver durante sua jornada.</span></p></div><div id="fIW06bPloKFLxcb9NQbdqtW2fBZ8gTbx" class="widget widget-text"><p>Esqueça tudo que você já viu antes, nós vamos te revelar as estratégias de quem <span style="color: rgb(0, 113, 255);"><span style="font-weight: 700;">REALMENTE TEM RESULTADO</span>.</span></p></div><div id="bsyE3zCca9kXaT6AfVhgvexUbJqKxWMo" class="widget widget-text"><p> Nós não vamos te ensinar a fazer o que todos fazem, nós iremos te ensinar as <span style="color: rgb(0, 113, 255); font-weight: bold;">ESTRATÊGIAS QUE REALMENTE FUNCIONAM</span> para nossos afiliados que <span style="color: rgb(0, 113, 255);"><span style="font-weight: bold;">MAIS VENDEM</span>.</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="Nniwxwk27cgUc16okI9SKNHKL1lXa3FU" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="AJV15Ga2GLDT23deFzXNhiTla3LXR2DT" class="widget widget-text"><p><span style="color: rgb(0, 0, 0); font-weight: bold;">QUEM SOU EU?</span></p></div><div id="y83w88vZ3oI24nOTW7oQBEnKGroi2dol" class="widget widget-text"><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);">Meu nome é Pedro Guimarães, tenho 23 anos. Hoje vivo uma vida que sinceramente eu nunca imaginei que alcançaria. </span></font></p><p><span style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><br></span></p><p><span style="caret-color: rgb(255, 255, 255); font-weight: bold; color: rgb(255, 255, 255);">Tudo graças à internet.</span></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);"><br></span></font></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);">A minha história é cheia de altos e baixos, passei por muita dificuldade e já cheguei no fundo do poço. Sabe qual foi o problema disso tudo?</span></font></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);"><br></span></font></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);">Nenhum.</span></font></p><p><span style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><br></span></p><p><span style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><span style="font-weight: bold;">Toda</span><span style="font-weight: bold;"> dificuldade me fez crescer e aprender em 2 anos de internet o que eu não tinha aprendido em 21 anos de vida.</span></span></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);"><br></span></font></p><p><font color="#ffffff"><span style="caret-color: rgb(255, 255, 255);">Quer saber o que de melhor eu aprendi na minha jornada, e além disso ter orientação para iniciar a sua?</span></font></p><p><br></p></div><img id="ZzaRCBRUtTpQgtL4AI3r2bvELNgR50OZ"  width="471" height="601"  class="widget widget-image" data-original="https://images.assets-landingi.com/CFMKFJu7/Sem_T_tulo_6.png" src="https://images.assets-landingi.com/0wh4bK26127bsbtr/Sem_T_tulo_6.png" srcset="https://images.assets-landingi.com/0wh4bK26127bsbtr/Sem_T_tulo_6.png 1x, https://images.assets-landingi.com/CFMKFJu7/Sem_T_tulo_6.png 2x"  alt="" ><a href="/button/wN0xx0xSty9bnVUKOz4BFAKByzxgMaZt" id="wN0xx0xSty9bnVUKOz4BFAKByzxgMaZt" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/PHC139864">
+    <div class="widget-overlay"></div>
+    <div id="OQRrTtB0utCPON79bvqWuhDUJWW9tlly" class="widget widget-text">QUERO ME INSCREVER AGORA!</div>
+</a>
+        </div>
+    </div>
+</div>
+<div id="dOLGomxm9QI8NcdwIgII55Rirz70Io7U" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="vSs57WSelB3xZnOQODSXcyl50aVqTsSh" class="widget widget-text"><p><span style=""><span style="font-weight: 700;">O QUE VOU </span></span><span style="font-weight: bold; color: rgb(0, 113, 255);">APRENDER</span><span style="font-weight: 700;"> </span></p><p><span style="font-weight: 700;">DENTRO </span><span style="font-weight: 700;">DO CVR?</span></p></div><div id='JRK9KZbOSZ7RbRe3mG5XEqSXG04P6fpm' data-vimeo-url='https://vimeo.com/499761249' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('JRK9KZbOSZ7RbRe3mG5XEqSXG04P6fpm', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><a href="/button/kz5ZaXM6DA2F0rgXIVFy2ezo8QlAVame" id="kz5ZaXM6DA2F0rgXIVFy2ezo8QlAVame" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/PHC139864">
+    <div class="widget-overlay"></div>
+    <div id="gQMNVPOu0MfnI3LyloSO7fwx16KGayP1" class="widget widget-text">QUERO ME INSCREVER AGORA!</div>
+</a>
+        </div>
+    </div>
+</div>
+<div id="pwvhREuFMISUAcqWpc1hTc1GXkSZu3QR" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="t1bpDeZHULUTvJATMmTcgbdtSQvQSMeT" class="widget widget-text"><p>"Será que o <span style="background-color: transparent; font-weight: bold;">Código Venda </span><span style="letter-spacing: 0px; background-color: transparent; font-weight: bold;">Realizada</span><span style="letter-spacing: 0px; background-color: transparent;"> </span></p><p><span style="letter-spacing: 0px; background-color: transparent;">funciona pra mim?"</span></p></div><div id="HETG97AelbR52GAa6Suiu1kC55TTzLHt" class="widget widget-text"><p>A resposta para essa pergunta é <span style="color: rgb(255, 243, 0); font-weight: bold;">bem simples</span>, por isso vou deixar o vídeo </p><p>de algumas pessoas que<span style="font-weight: bold; color: rgb(255, 243, 0);"> mudaram suas vidas depois do CVR.</span></p></div><div id='Tc1gbu90W425b6IzoN5hWdn3ABVZWSbg' data-vimeo-url='https://vimeo.com/501972880' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('Tc1gbu90W425b6IzoN5hWdn3ABVZWSbg', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='klM0lZ7uzmRoTQZEuJ0g1DQUAPTJL4GX' data-vimeo-url='https://vimeo.com/501972858' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('klM0lZ7uzmRoTQZEuJ0g1DQUAPTJL4GX', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='uDlittNRkZlK73Kq2pzEgUMCCyHNQeOa' data-vimeo-url='https://vimeo.com/501972846' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 1,
+        responsive: true
+    };
+    var player = new Vimeo.Player('uDlittNRkZlK73Kq2pzEgUMCCyHNQeOa', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='sVhuSPuk1gdsxa8N6NxzAUii8DIMLwoy' data-vimeo-url='https://vimeo.com/501972818' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('sVhuSPuk1gdsxa8N6NxzAUii8DIMLwoy', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id="ke7AaDBMyTUxrgc9N5cgPUB0vvv7TFXJ" class="widget widget-text"><p><font color="#ffffff"><i>"No inicio de Novembro eu decidi comprar o CVR para ampliar meus conhecimentos, no mês de novembro já fiz mais de R$8.000,00"- </i>Beatriz/RJ</font></p></div><div id="ndgSWsFkaamSARMLXkX22Eqwgy0zWFAD" class="widget widget-text"><p><span style="font-style: italic; color: rgb(255, 255, 255);">"Já tinha feito muitos cursos de Marketing digital e nunca tive resultado, mas com o CVR aprendi a aplicar e tiver resultado"- </span><span style="color: rgb(255, 255, 255);">Leo Carvalho/SP</span></p></div><div id="rsopf0fgK5cRWvnfUgB3kwHQgTNmXJt0" class="widget widget-text"><p><font color="#ffffff"><i>"Sou aluna do curso CVR, Só tenho a agradecer a toda equipe, não desanima galera. não é fácil mas não é impossível"  - </i>Mônica/MG</font></p></div><div id="oGfry6uhJqShZfG4LILAHh5pRL0pDmvT" class="widget widget-text"><p><span style="font-style: italic; color: rgb(255, 255, 255);">"Eu vim aqui para mostrar a vocês o meu resultado dentro do marketing digital, mais de R$7.000,00" - </span><span style="color: rgb(255, 255, 255);">Marco/RO</span></p></div><div id="NJE7qiMOdPxxD9b0GoXLcxGl3wL5T5Pk" class="widget widget-html">
+    <div class="custom-html-value" style="position: relative"><div id="pop-whats-container" class="opened" style="display:none">
+<a href="#" class="pop-whats">
+<div class="pop-whats_icon">
+<div class="ball-red"></div>
+</div>
+</a>
+<div class="box-whats">
+<img class="pop-fechar" src="https://midiaronaldlopes.com.br/script/x-icon.svg">
+<div class="header">
+<div class="img-whats"><img src="https://instagram.fudi1-1.fna.fbcdn.net/v/t51.2885-15/e35/118628424_809574066454792_7977574952465202785_n.jpg?_nc_ht=instagram.fudi1-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=5FPQu_XatwkAX8KZURz&tp=1&oh=b05ae2e345e82f8d2180d5901d7e2fed&oe=603E69D7"></div>
+<h2 class="no-margin">Pedro Guimarães</h2>
+<h3 class="no-margin">Responde em alguns minutos</h3>
+</div>
+<div class="content">
+<div class="text-content text-left source-sans-pro">
+<span class="nom-brv mb10">Pedro Guimarães</span>
+<span class="wpp-loader d-none">
+<div class="wpp-typing-loader"></div>
+</span>
+<span class="wpp-text">
+Opa tudo bom?  <br> <br>
+Tem mais alguma dúvida? Me chama aqui no zap, bora conversar.
+</span>
+<span class="data-brv">agora</span>
+</div>
+</div>
+<div class="foot">
+<a class="btn-whats" target="_blank" href="https://api.whatsapp.com/send?phone=5531982468431&text=Ooi%2C%20quero%20saber%20mais%20sobre%20o%20CVR!">
+<span style="display: inline-block; vertical-align: middle;">
+<img style="width: 20px;" src="https://midiaronaldlopes.com.br/script/whats-logo.svg"></span>
+<span style="display: inline-block; vertical-align: middle; margin-left: 10px;">Chamar no Whatsapp</span>
+</a>
+</div>
+</div>
+</div></div>
+</div>
+        </div>
+    </div>
+</div>
+<div id="ARxPZtK06rpnJgGOmuOirCTUhKV7xJdW" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="MWNsR3wmHbNB8fdFCdtzugA6x4TEKskR"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/Uh1QP3x2/BONUS1.png" src="https://images.assets-landingi.com/Re2ceHcr0MRlYiY4/BONUS1.png" srcset="https://images.assets-landingi.com/Re2ceHcr0MRlYiY4/BONUS1.png 1x, https://images.assets-landingi.com/Uh1QP3x2/BONUS1.png 2x"  alt="" ><img id="OPHpGhF5p5yEahUhXHiaJOsZEZSqHtgv"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/7Bs3cyPX/BONUS2.png" src="https://images.assets-landingi.com/ALsXXY9Xm5f9Z1Yw/BONUS2.png" srcset="https://images.assets-landingi.com/ALsXXY9Xm5f9Z1Yw/BONUS2.png 1x, https://images.assets-landingi.com/7Bs3cyPX/BONUS2.png 2x"  alt="" ><div id="GO6O0sUxc2HTr6tFR8wd8qnarpzoHauF" class="widget widget-text"><p><b>#BÔNUS 1</b> </p></div><div id="KCh1zZNVNspBXHdNLONMeLC9x6kpvpl2" class="widget widget-text"><p><b>Engajamento no </b><b style="">Instagram </b></p><p><b style="">com Ronald Lopes</b></p></div><div id="SlNDG1QQXPpqJTG6pzZq6LJq123BEU7T" class="widget widget-text"><p><b>#BÔNUS 2</b></p></div><div id="DOkDAqycvBVx4xef95Aao2wvKysISHJ6" class="widget widget-text"><p><b>Calls de mentoria com<br>Pedro Guimarães</b></p></div><img id="li2hGI4KLnJggEWqKbnMEFZTWtiU9LIv"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/9Ue4Hgny/BONUS4.png" src="https://images.assets-landingi.com/Tedz2NVn8qj7aIRy/BONUS4.png" srcset="https://images.assets-landingi.com/Tedz2NVn8qj7aIRy/BONUS4.png 1x, https://images.assets-landingi.com/9Ue4Hgny/BONUS4.png 2x"  alt="" ><div id="yeImHtSsMoz3vWGmS4TAVQvm6Lh9gh8t" class="widget widget-text"><p><b>Calls de mentoria com o Top Afiliado<br></b></p><p><b>que Fatura R$ 50.000,00 por mês</b></p></div><div id="oEPkOSPIRtRkJ1KZ6FuHlGTKPqVSuoE1" class="widget widget-text"><p><b>#BÔNUS 4</b></p></div><img id="waMxSiTFEH3FB9zMQCmKCXvR5iUs5HIh"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/BhnjZfML/BONUS3.png" src="https://images.assets-landingi.com/JDadAv5g21WPNM1k/BONUS3.png" srcset="https://images.assets-landingi.com/JDadAv5g21WPNM1k/BONUS3.png 1x, https://images.assets-landingi.com/BhnjZfML/BONUS3.png 2x"  alt="" ><div id="rhcr7aJLdCsgCll2i3kEteklO7NTyFcA" class="widget widget-text"><p><b>Call de mentoria com </b></p><p><b>Pedro Guimarães e Ronald Lopes</b></p></div><div id="xZbtdaainkIZ1eSKzCyBb8Sn9dyoeM8F" class="widget widget-text"><p><b>#BÔNUS 3</b></p></div><div id="baIEnfU3sdqvbsrvJ4maS4LNh0Q6zdtf" class="widget widget-text"><p><b>Tráfego com Influencer</b></p></div><img id="OIivpJGZ2ZkBA5Davu1sZCuKviTLc8WH"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/WdoWSotN/BONUS8.png" src="https://images.assets-landingi.com/aEEAfhQzk1ihB8b4/BONUS8.png" srcset="https://images.assets-landingi.com/aEEAfhQzk1ihB8b4/BONUS8.png 1x, https://images.assets-landingi.com/WdoWSotN/BONUS8.png 2x"  alt="" ><img id="STFbuiIcL5UDhpnMXwkL9ebPxwNmSNIb"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/ZTWrWQWh/BONUS7.png" src="https://images.assets-landingi.com/fwaq31v1kUioJrH2/BONUS7.png" srcset="https://images.assets-landingi.com/fwaq31v1kUioJrH2/BONUS7.png 1x, https://images.assets-landingi.com/ZTWrWQWh/BONUS7.png 2x"  alt="" ><div id="F7Xbsw9a7rEgiPJNKQPO2oOR8dJvE2Kw" class="widget widget-text"><p><b>Taboola ADS</b></p></div><div id="LrSB58y3S2qTyNnaKHnVS5wKJSlSetKS" class="widget widget-text"><p><b>#BÔNUS 8</b></p></div><div id="O0cpp7pot0aFL6Bs6q3PTLTGuZRUKqAb" class="widget widget-text"><p><b>#BÔNUS 7</b></p></div><div id="FDV9buUCERIU9ke6EpnVwOUiCTN8SrES" class="widget widget-text"><p><b>As estratégias orgânicas que geraram</b></p><p><b>mais de R$ 50.000,00</b></p></div><div id="VTLvTz6oqzRMJvqzZTgdAmfUJkKRmqgN" class="widget widget-text"><p><b>Google ADS</b></p></div><img id="IAdwrkdyfTkWQoTPZJPGoxzqn0WemeKn"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/bPlxkJdm/BONUS5.png" src="https://images.assets-landingi.com/wRocyaLhOi7D2QZc/BONUS5.png" srcset="https://images.assets-landingi.com/wRocyaLhOi7D2QZc/BONUS5.png 1x, https://images.assets-landingi.com/bPlxkJdm/BONUS5.png 2x"  alt="" ><img id="Qqgimwt99391KdVwUnb1tWa3a6rqfmFX"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/dMCzMf4N/BONUS6.png" src="https://images.assets-landingi.com/MZ6p9bInGkrY85IM/BONUS6.png" srcset="https://images.assets-landingi.com/MZ6p9bInGkrY85IM/BONUS6.png 1x, https://images.assets-landingi.com/dMCzMf4N/BONUS6.png 2x"  alt="" ><div id="qXwqlwB5JA5XJ3Nnb1IEVXJUxDsNoDtE" class="widget widget-text"><p><b>#BÔNUS 5</b></p></div><div id="GKMOl3do8MK7JxVkJgN6ORWskwm07PPD" class="widget widget-text"><p><b>#BÔNUS 6</b></p></div><div id="L19UUDfEkK4ZS0gewwzmuBqmobg2rkm1" class="widget widget-text"><p><b>#BÔNUS 9</b></p></div><img id="lvMUkG05leuQ62nUBOqlxQAQK7Kc1On6"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/qLbRZaaX/BONUS9.png" src="https://images.assets-landingi.com/hPYaxLVXLJ5jJkfn/BONUS9.png" srcset="https://images.assets-landingi.com/hPYaxLVXLJ5jJkfn/BONUS9.png 1x, https://images.assets-landingi.com/qLbRZaaX/BONUS9.png 2x"  alt="" ><img id="LK7toZwbkhrDUwNnrzgOPkApqFdmrKTN"  width="452" height="282"  class="widget widget-image" data-original="https://images.assets-landingi.com/OGX1xnhT/BONUS10.png" src="https://images.assets-landingi.com/Gw7PbOk9WxtLLEVB/BONUS10.png" srcset="https://images.assets-landingi.com/Gw7PbOk9WxtLLEVB/BONUS10.png 1x, https://images.assets-landingi.com/OGX1xnhT/BONUS10.png 2x"  alt="" ><div id="N9s13HfZBC0I5q0rAGkvsLyt8JnAqklr" class="widget widget-text"><p><b>Lançamento como Afiliado</b></p></div><div id="U3S4eFkz3xUhFsLZn0m7GS7q6J3NLCPU" class="widget widget-text"><p><b>Email Marketing Avançado</b></p></div><div id="BeNZpdhV4dZGusLDH75HHy3MZSATEDfh" class="widget widget-text"><p><b>#BÔNUS 10</b></p></div><div id="MbU8a0ct1eu5bD9fs7TimAbpSIqNDxqs" class="widget widget-text"><p>Como você chegou até aqui, e são pouquíssimos que realmente tomam a decisão de mudar de vida, vou te presentear com <span style="font-weight: bold; color: rgb(0, 113, 255);">10 BÔNUS EXTRAS</span>. </p><p><br></p><p>Isso mesmo, se você se tornar nosso aluno <span style="font-weight: bold; color: rgb(0, 113, 255);">HOJE</span> vai garantir o acesso a </p><p>todos nossos Bônus <span style="font-weight: bold; color: rgb(0, 113, 255);">sem pagar nada a mais por isso.</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="acxNkqniVMLQVZqTCqM0Acuk64eqNQZ2" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="WfQCmN2JFfF71DZ5O6q81mI4sIPxqyHf" class="widget widget-text"><p><span style="background-color: transparent;"><span style="color: rgb(0, 0, 0);">Adquirindo </span><span style="font-weight: bold; color: rgb(255, 0, 0);">HOJE</span><span style="color: rgb(0, 0, 0);"> o</span> </span></p><p><span style="background-color: transparent;"><span style="font-weight: bold; color: rgb(0, 113, 255);">Código Venda Realizada</span> <span style="color: rgb(0, 0, 0);">você recebe:</span></span></p></div><div id="kKwH60b3qT4Zw8Lgu3GzfgCBFKH73iJi" class="widget widget-box"></div><div id="xE3G7Ktuisy8514KVzdOZtCb8ZpuTiq0" class="widget widget-text"><p><span style="color: rgb(0, 0, 0);">Código Venda Realizada l </span><span style="text-decoration-line: line-through; color: rgb(255, 0, 0); font-weight: bold;">497</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Engajamento no Instagram por Ronald Lopes l </span><span style="color: rgb(255, 0, 0); font-weight: bold; text-decoration-line: line-through;">297 </span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Call de Mentoria com Pedro Guimarães e Ronald Lopes l </span><span style="font-weight: bold; color: rgb(255, 0, 0); text-decoration-line: line-through;">997</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Call de Mentoria com o Top Afiliado que fatura 50k por mês l </span><span style="font-weight: bold; color: rgb(255, 0, 0); text-decoration-line: line-through;">127</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">As Estratégias Orgânicas que geraram mais de R$ 50k l </span><span style="font-weight: bold; color: rgb(255, 0, 0); text-decoration-line: line-through;">147</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Google Ads com TOP Afiliado que faz mais de R$ 100k por mês l </span><span style="font-weight: bold; color: rgb(255, 0, 0); text-decoration-line: line-through;">297</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">O segredo do Taboola Ads l </span><span style="font-weight: bold; text-decoration-line: line-through; color: rgb(255, 0, 0);">197</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Melhores Estratégias para tráfego com Influenciadores l </span><span style="color: rgb(255, 0, 0); font-weight: bold; text-decoration-line: line-through;">297</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Como fazer lançamento como Afiliado l </span><span style="color: rgb(255, 0, 0); font-weight: bold; text-decoration-line: line-through;">297</span></p><p><span style="color: rgb(0, 0, 0);"><br></span></p><p><span style="color: rgb(0, 0, 0);">Tudo sobre e-mail Marketing Avançado l </span><span style="text-decoration-line: line-through; color: rgb(255, 0, 0); font-weight: bold;">197</span></p></div><div id="tcN1vQnFTGtdHZSavG0GZTf6z4nsLEfc" class="widget widget-text"><p><span style="font-weight: bold; text-decoration-line: line-through; color: rgb(255, 0, 0);">R$3.150,00</span></p></div><div id="TG4PnC1Mln2LV9TNyrisTl3hA4Sv9PEF" class="widget widget-text"><p><span style="font-weight: bold; color: rgb(29, 164, 0);">R$297,00</span></p></div><a href="/button/crpinbTs6GEvEV9H4TQUFGsDmmImy1xs" id="crpinbTs6GEvEV9H4TQUFGsDmmImy1xs" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/PHC139864">
+    <div class="widget-overlay"></div>
+    <div id="JPHKCNrptzpHU4UUqSJAiZTLUkQau7yQ" class="widget widget-text">QUERO ME INSCREVER AGORA!</div>
+</a>
+        </div>
+    </div>
+</div>
+<div id="BJCJhWizUyHGBD9UPqtAZIdWp81JXAT8" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="TUHPg0JWmvBa4Q8Eq5AwRqfpEeFZTR2m" class="widget widget-text"><p><span style="font-weight: bold;"><span style="color: rgb(255, 0, 0);">ATENÇÃO:</span><span style="color: rgb(52, 135, 168);"> </span>ESSA É SUA ULTIMA CHANCE DE FAZER PARTE DOS PRIMEIROS <span style="color: rgb(0, 113, 255);">1000</span><span style="color: rgb(52, 135, 168);"> </span><span style="color: rgb(0, 113, 255);">ALUNOS A FAZEREM 10K TODOS OS MESES.</span></span></p></div><div id="pxNM3WQvP1G50KXJmleyKUltunTsRFbx" class="widget widget-text"><p>O meu objetivo com esse curso não é ter ganhos financeiros, estou focado em cumprir minha promessa de <span style="color: rgb(0, 113, 255); font-weight: bold;">1000 alunos fazendo 10k todos os meses</span>. </p><p><br></p><p>Se você está cansado do seu dia a dia, de depender do sistema, do estilo de vida desanimador que é forçado a levar por falta de grana. <span style="color: rgb(0, 113, 255); font-weight: bold;">Aproveite esta oportunidade.</span></p></div><div id="B81ETF9rsI8Wo6w79K8PryMbVLcK80Kc" class="widget widget-text"><p>O curso inteiro, com os 10 BÔNUS está por menos que 25 reais por mês, VINTE E CINCO REAIS é o que a maioria gasta comendo um MC Donalds nos finais de semana.</p><p><br></p><p><span style="font-weight: bold; color: rgb(0, 113, 255);">Você vai comer um hambúrguer ou mudar de vida</span><span style="font-weight: bold; color: rgb(0, 113, 255);">?</span></p></div><div id="W8lVNwZ7JaIq7vpQ0KphDAaHBBPFkk5U" class="widget widget-text"><p><span style="font-weight: 700; color: rgb(255, 0, 0);">Essa oferta é por tempo limitado!</span></p><p><span style="font-weight: 700; color: rgb(255, 0, 0);">Vai ficar de fora?</span></p></div><a href="/button/GtvUDAn1tSRrdTT7nqZdOy3mWOoXhlVF" id="GtvUDAn1tSRrdTT7nqZdOy3mWOoXhlVF" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/PHC139864">
+    <div class="widget-overlay"></div>
+    <div id="hFdOvCgQku40NB7XpLaAQNkNlOXN1ib9" class="widget widget-text">QUERO ME INSCREVER AGORA!</div>
+</a>
+        </div>
+    </div>
+</div>
+<div id="ucvhb45qoDTppky1q2Tnrv2IvFyTxkXt" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="rMf0qs8evU3merqUBmFP3T7nHpk6LHuH" class="widget widget-text"><p><span style="color: rgb(255, 255, 255); font-weight: bold;">Se em 7 dias você não gostar do conteúdo. </span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;"><br></span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;">Não gostar das estratégias dos nossos top afiliados.</span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;"><br></span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;">Basta me mandar uma mensagem e eu vou devolver TODO seu DINHEIRO. </span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;"><br></span></p><p><span style="color: rgb(255, 255, 255); font-weight: bold;">Nossa prioridade é a sua satisfação.</span></p><p><br></p></div><img id="fWOZbmtSAb7Zg14S4XfT5h8ezTKFkOTy"  width="357" height="301"  class="widget widget-image" data-original="https://images.assets-landingi.com/WVFrlbr7/7_dias_garantia.png" src="https://images.assets-landingi.com/JV7BHnCeQrNyd4q5/7_dias_garantia.png" srcset="https://images.assets-landingi.com/JV7BHnCeQrNyd4q5/7_dias_garantia.png 1x, https://images.assets-landingi.com/WVFrlbr7/7_dias_garantia.png 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="P4gT65RKmosGM5pT11PSwuGysvyc790f" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="BNWVqBBQyBGhM2z67QfDcd9w27NHaCCl" class="widget widget-text"><p><span style="font-weight: 700;">Restou alguma dúvida? </span></p></div><a href="/button/sSlKosnr18DqDug1pbzBxyzLrW0m1X1I" id="sSlKosnr18DqDug1pbzBxyzLrW0m1X1I" class="widget widget-button"  version="3" rel="noopener noreferrer" data-target-url="https://api.whatsapp.com/send?phone=5531982468431&amp;text=Ooi%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20CVR!%20">
+    <div class="widget-overlay"></div>
+    <div id="q4JVB2kAsOTd7XBeIztQPJNZnyRd7nXO" class="widget widget-text">CLIQUE E ME CHAME NO WHATSAPP</div>
+</a><div id="s9Lw85Tsn112qBHbC5I9epRLELkT3ToN" class="widget widget-text"><p>Clique no botão abaixo para me chamar no</p><p>WhatsApp e esclarecer todas elas.</p></div><img id="ynZwkd0hcTvbqFmtwKpEN1STSUurSrcm"  width="109" height="109"  class="widget widget-image" data-original="https://images.assets-landingi.com/TTBEAAaw/VENDAREALIZADA_LOGO_04.png" src="https://images.assets-landingi.com/4eq5G2uZEAG2lFab/VENDAREALIZADA_LOGO_04.png" srcset="https://images.assets-landingi.com/4eq5G2uZEAG2lFab/VENDAREALIZADA_LOGO_04.png 1x, https://images.assets-landingi.com/TTBEAAaw/VENDAREALIZADA_LOGO_04.png 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="WdaiOHitkxGql1ZH8PzeUNVqdBC07H8A" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="wi0gX1UfNZGpaIPZ7P9l7pfzmM7IchTi" class="widget widget-text"><p>Código Venda Realizada® - Todos os direitos reservados.</p><p>TERMOS DE USO        POLÍTICAS DE PRIVACIDADE</p></div><img id="ClfkOGpthcsBr8AW6ib5X75D7Qc5wrgO"  width="112" height="112"  class="widget widget-image" data-original="https://images.assets-landingi.com/TTBEAAaw/VENDAREALIZADA_LOGO_04.png" src="https://images.assets-landingi.com/aVPJx6IYOVFfpBBk/VENDAREALIZADA_LOGO_04.png" srcset="https://images.assets-landingi.com/aVPJx6IYOVFfpBBk/VENDAREALIZADA_LOGO_04.png 1x, https://images.assets-landingi.com/TTBEAAaw/VENDAREALIZADA_LOGO_04.png 2x"  alt="" >
+        </div>
+    </div>
+</div><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/bootstrap/js/landend.bootstrap.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/bootstrap/js/bootbox.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/js/landing.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/assets/js/dist/landend/301019/landend.js"></script><script type='text/javascript' src='https://old.assets-landingi.com/assets/js/vendor/jquery-form/jquery.form.min.js'></script>
+<script type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/241120/landend.js"></script>
+<script type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/260820/validation.js"></script><script type="text/javascript" src="https://scripts.assets-landingi.com/shopify/27072020/iframe.js"></script><script src="https://stats.landingi.com/track/1018835"></script><script type="text/javascript" src="https://scripts.assets-landingi.com/landend/030820/files.js"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZKKXP6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script language="JavaScript">
+
+  setTimeout(function(){
+document.getElementById('pop-whats-container').style.display = "block";
+},4000);
+  
+</script><script type="text/javascript" src="https://midiaronaldlopes.com.br/script/whatsapp.js"></script><script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var youtubePlayers = [];
+
+    function onYouTubeIframeAPIReady() {
+        youtubeVideos.forEach(function (video) {
+            var options = {
+                playerVars: {
+                    rel: video.rel,
+                    loop: video.loop,
+                    showinfo: video.showinfo,
+                    controls: video.controls,
+                    mute: video.mute
+                },
+                events: {
+                    'onReady': function (event) {
+                        var element = $('#' + video.hash);
+
+                        if (video.autoplay) {
+                            if (element.closest('.video-iframe-container').length || !element.closest('.landingi-popup').length) {
+                                event.target.playVideo();
+                            }
+                        }
+                    },
+                    'onStateChange' : function (event) {
+                        if (event.target.getPlayerState() === 0 && video.loop !== 0) {
+                            event.target.playVideo();
+                        }
+                    }
+                }
+            };
+
+            if (video.id) {
+                options.videoId = video.id;
+            }
+
+            youtubePlayers[video.hash] = new YT.Player(video.hash, options);
+        });
+    }
+</script><script src="https://scripts.assets-landingi.com/video-bg/v0.5/videoBackground.js"></script></body></html>
